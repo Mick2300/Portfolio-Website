@@ -128,3 +128,28 @@ header {
     margin: 0;
 }
 
+/* This triggers when the screen is 768px wide or smaller */
+@media (max-width: 768px) {
+    
+    .about-container {
+        flex-direction: column; /* Stacks the pic on top of the text */
+        align-items: center;    /* Centers everything */
+        text-align: center;     /* Centers your bio text */
+        gap: 20px;
+    }
+
+    header {
+        flex-direction: column; /* Stacks your name and email */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Changes 3 columns to 1 big column */
+    }
+
+    .profile-box {
+        width: 200px; /* You can make the pic a bit bigger on mobile */
+        height: 200px;
+    }
+}
