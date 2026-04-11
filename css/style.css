@@ -8,7 +8,7 @@
 body { 
     background-color: var(--bg);
     background-image: linear-gradient(rgba(13, 2, 8, 0.9), rgba(13, 2, 8, 0.9)),
-                      url('assets/bunnyhead.png'); /* Removed ../ for GitHub safety */
+                      url('../assets/bunnyhead.png'); /* Goes up one folder to find assets */
     background-repeat: repeat;
     background-size: 80px;
     background-attachment: fixed;
@@ -33,16 +33,10 @@ header {
 .logo {
     font-family: 'Rubik Spray Paint', cursive;
     color: var(--pink);
-    cursor: pointer;
-    transition: all 0.3s ease;
+    margin: 0;
 }
 
-.logo:hover {
-    color: var(--green);
-    text-shadow: 0 0 10px var(--green);
-}
-
-/* About Section Layout */
+/* About Section */
 .about-section {
     display: flex;
     gap: 30px;
@@ -51,60 +45,45 @@ header {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background: #1a1a1a;
     border: 2px solid var(--pink);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
 }
 
-.skill-tag {
-    color: var(--green); 
-    font-family: 'JetBrains Mono', monospace;
-    border: 1px solid var(--green);
-    padding: 4px 10px;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    display: inline-block;
-    margin: 5px 5px 0 0;
-}
-
-/* Projects Grid */
+/* The Grid */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 25px;
-    margin-top: 20px;
 }
 
 .project-card {
-    background-color: #1a1a1a;
+    background: #1a1a1a;
     border: 1px solid var(--pink);
     padding: 20px;
-    border-radius: 4px;
-    text-align: center;
     text-decoration: none;
     color: white;
-    transition: 0.3s ease;
+    transition: 0.3s;
+    display: block;
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 15px rgba(255, 0, 189, 0.3);
+    transform: translateY(-5px);
     border-color: var(--green);
+    box-shadow: 0 5px 15px rgba(57, 255, 20, 0.2);
 }
 
 .project-thumb {
-    height: 100px;
+    height: 120px;
     background: #2a2a2a;
-    margin-bottom: 15px;
-    border-radius: 2px;
+    margin-bottom: 10px;
 }
 
-/* Mobile Responsive */
+/* Mobile Fix */
 @media (max-width: 768px) {
     .grid-container { grid-template-columns: 1fr; }
     .about-section { flex-direction: column; text-align: center; }
