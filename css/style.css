@@ -1,4 +1,8 @@
 /* 1. VARIABLES & RESET */
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --bg: #0d0208;
     --pink: #ff00bd;
@@ -136,4 +140,16 @@ header {
         width: 180px !important; /* Slightly larger on mobile */
         height: 180px !important;
     }
+}
+
+.skill-tag {
+    background: rgba(57, 255, 20, 0.1);
+    color: var(--text);
+    border: 1px solid var(--pink);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    display: inline-block;
+    margin-top: 10px;
 }
