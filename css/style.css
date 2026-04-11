@@ -30,9 +30,9 @@ header {
     margin-bottom: 50px;
 }
 
-.logo {
-    font-family: 'Rubik Spray Paint', cursive;
-    color: var(--pink);
+.name {
+    font-family: 'Inter', cursive;
+    color: var(--text);
     margin: 0;
 }
 
