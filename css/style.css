@@ -75,3 +75,30 @@ main {
     transform: scale(1.05); /* Makes it pop when you hover over it */
     box-shadow: 0 0 15px #ff00ff;
 }
+
+/* This targets the 'parent' container */
+.grid-container {
+    display: grid;
+    /* This creates 3 equal columns that take up 1 fraction of space each */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* This creates the gutters/spacing between your boxes */
+    padding: 20px 0;
+}
+
+/* This styles the individual project cards */
+.project-card {
+    background-color: #1a1a1a;
+    border: 2px solid #ff00ff; /* Neon border to match your vibe */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none; /* Keeps the link from turning blue/underlined */
+    color: white;
+    transition: 0.3s; /* Makes the hover effect smooth */
+}
+
+/* This makes the card 'pop' when you mouse over it */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 0, 255, 0.4);
+}
