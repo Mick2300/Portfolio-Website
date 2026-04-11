@@ -8,7 +8,7 @@
 body { 
     background-color: var(--bg);
     background-image: linear-gradient(rgba(13, 2, 8, 0.9), rgba(13, 2, 8, 0.9)),
-                      url('../assets/bunnyhead.png'); /* Goes up one folder to find assets */
+                      url('../Assets/bunnyhead.png'); /* Goes up one folder to find assets */
     background-repeat: repeat;
     background-size: 80px;
     background-attachment: fixed;
